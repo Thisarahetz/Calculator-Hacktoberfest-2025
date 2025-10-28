@@ -21,6 +21,7 @@ export default function Calculator({
   switchAlternateTheme,
 }: CalculatorProps) {
   const [result, setResult] = useState("");
+  const [resultPulse, setResultPulse] = useState(false);
   const [toast, setToast] = useState("Calculator");
   const [scientificMode, setScientificMode] = useState(false);
 
@@ -35,6 +36,14 @@ export default function Calculator({
       setResult(String(calculatedValue));
     }
   }, []);
+
+  // brief pulse animation when result changes
+  useEffect(() => {
+    if (result === "") return;
+    setResultPulse(true);
+    const t = setTimeout(() => setResultPulse(false), 350);
+    return () => clearTimeout(t);
+  }, [result]);
 
   const handleButtonClick = useCallback(
     (val: string, id: string) => {
@@ -149,8 +158,9 @@ export default function Calculator({
             type="text"
             value={result}
             placeholder="Result"
-            className="result-input"
+            className={`result-input ${resultPulse ? "pulse" : ""}`}
             readOnly
+            aria-live="polite"
           />
         </div>
 
@@ -184,6 +194,7 @@ export default function Calculator({
             <input
               type="button"
               id="btn-openbrac"
+              className="scientific-btn"
               value="("
               onClick={() => handleButtonClick("(", "btn-openbrac")}
             />
@@ -213,6 +224,7 @@ export default function Calculator({
             <input
               type="button"
               id="btn-closebrac"
+              className="scientific-btn"
               value=")"
               onClick={() => handleButtonClick(")", "btn-closebrac")}
             />
@@ -242,6 +254,7 @@ export default function Calculator({
             <input
               type="button"
               id="btn-raisepow"
+              className="scientific-btn"
               value="^"
               onClick={() => handleButtonClick("^", "btn-raisepow")}
             />
@@ -277,6 +290,7 @@ export default function Calculator({
             <input
               type="button"
               id="btn-sqrt"
+              className="scientific-btn"
               value="√"
               onClick={() => handleButtonClick("√", "btn-sqrt")}
             />
