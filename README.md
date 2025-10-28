@@ -1,56 +1,120 @@
-## Calculator
+## Calculator - Next.js Edition
 
-![2021-glassmorphism-calculator-ui](https://user-images.githubusercontent.com/73592688/194620666-431adc31-df00-4345-bc26-d1b5baac9f2a.jpg)
+![Calculator App](https://user-images.githubusercontent.com/73592688/194620666-431adc31-df00-4345-bc26-d1b5baac9f2a.jpg)
 
-<br>
+A beautiful, modern calculator application built with Next.js, featuring dark mode, light mode, and an alternate theme. This project is a Next.js conversion of the original JavaScript Calculator.
 
-# Hacktoberfest2022
+## Features
 
-![Uno_HackFest22_Hero_V1-scaled](https://user-images.githubusercontent.com/73592688/194618563-b53897e2-4805-4511-9ab8-b4396f38432d.jpg)
+- 🎨 **Multiple Themes**: Dark mode, Light mode, and a colorful alternate theme
+- 🔬 **Scientific Mode**: Toggle scientific calculator functions
+- ⌨️ **Keyboard Support**: Full keyboard input support
+- 📅 **Live Date/Time**: Real-time date and time display
+- 💫 **Animated Welcome Text**: Beautiful typewriter effect
+- 📱 **Responsive Design**: Works on all devices
+- ⚡ **Fast Performance**: Built with Next.js for optimal performance
 
-# HacktoberFest22
+## Technologies Used
 
-Hello Hackers! HacktoberFest has begun again for year 2022, and everyone's excited to get started!
-Contribute between: <h4>1 OCTOBER - 31 OCTOBER</h4>
+- [Next.js 14](https://nextjs.org/)
+- [React 18](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- CSS3 with CSS Variables
+- React Type Animation
 
-Create a Pull request and add any feature update to the repository.
+## Getting Started
 
-- [Click here to register for hacktoberfest2022.](https://hacktoberfest.digitalocean.com/)
+### Prerequisites
 
-### let's discuss how you can contribute in _hacktoberfest 2022_ 🙌
+- Node.js 18+
+- npm or yarn
 
-### Rules for contribution.
+### Installation
 
-**1) Star⭐ and Fork this repository.**
+1. Clone the repository
 
-**2) Modify or find bug and push code.**
-
-**3) Add valid program (or code) on that sub repository.**
-
-**4) Don't forget to add the problem statement , comments and complexity.⚠️⚠️ It's a must part.**
-
-```markdown
-git clone <link>
+```bash
+git clone https://github.com/your-username/Calculator-Hacktoberfest-2025.git
+cd Calculator-Hacktoberfest-2025
 ```
 
-- Create a branch
-```markdown
-git checkout -b "Your_name"
+2. Install dependencies
+
+```bash
+npm install
 ```
 
+3. Run the development server
 
-- Make your changes.
-- Commit and push your code.
-
-```markdown
-git add .
-git commit -m 'Commit message'
-git push origin branch-name
+```bash
+npm run dev
 ```
 
-**5) Commit the change and generate a valid pull request.**
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-**6) After carefully reviewing your code , if it is valid then it will be merged otherwise discarded.**
-##A SWAG PACK
-![image](https://user-images.githubusercontent.com/43540833/196027782-04e7b7e7-e37c-419d-a993-1447d609c1e2.png)
+## Building for Production
 
+```bash
+npm run build
+npm start
+```
+
+## Project Structure
+
+```
+.
+├── app/
+│   ├── layout.tsx      # Root layout
+│   ├── page.tsx        # Main page
+│   └── globals.css     # Global styles
+├── components/
+│   ├── Calculator.tsx  # Calculator component
+│   ├── Header.tsx      # Header with date/time
+│   └── Footer.tsx      # Footer component
+├── utils/
+│   └── calculate.ts    # Calculation logic
+├── public/
+│   └── assets/         # Static assets
+└── package.json
+```
+
+## Usage
+
+- Click buttons or use your keyboard to input numbers and operators
+- Press Enter or click "=" to calculate
+- Press Backspace to delete the last character
+- Shift + Backspace to clear all
+- Click the theme button (sun/moon icon) to toggle between dark and light mode
+- Click the settings icon to switch between light and alternate theme
+- Click "S" button to enable scientific mode with additional functions
+
+## Scientific Mode
+
+When scientific mode is enabled, you can use:
+
+- Parentheses `( )`
+- Power `^`
+- Square root `√`
+
+## Contributing
+
+Contributions are welcome! This project is open for Hacktoberfest 2025.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is open source and available under the MIT License.
+
+## Acknowledgments
+
+- Original design inspiration from the JavaScript Calculator project
+- Built for Hacktoberfest 2025
+
+---
+
+Made with ❤️ using Next.js
