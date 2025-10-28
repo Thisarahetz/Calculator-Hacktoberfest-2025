@@ -103,7 +103,7 @@ export default function Calculator({
           <h1 id="toast">{toast}</h1>
           <div className="top-buttons">
             <a
-              href="https://github.com/zxcodes/JavaScript-Calculator"
+              href="https://github.com/Thisarahetz/Calculator-Hacktoberfest-2025"
               target="_blank"
               rel="noopener noreferrer"
             >

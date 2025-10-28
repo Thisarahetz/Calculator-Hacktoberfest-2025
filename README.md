@@ -6,21 +6,25 @@ A beautiful, modern calculator application built with Next.js, featuring dark mo
 
 ## Features
 
-- 🎨 **Multiple Themes**: Dark mode, Light mode, and a colorful alternate theme
-- 🔬 **Scientific Mode**: Toggle scientific calculator functions
-- ⌨️ **Keyboard Support**: Full keyboard input support
+- 🎨 **Multiple Themes**: Beautiful dark mode, light mode, and colorful alternate theme with stunning gradients
+- 🔬 **Scientific Mode**: Toggle scientific calculator functions with advanced operations
+- ⌨️ **Keyboard Support**: Full keyboard input support for seamless experience
 - 📅 **Live Date/Time**: Real-time date and time display
-- 💫 **Animated Welcome Text**: Beautiful typewriter effect
-- 📱 **Responsive Design**: Works on all devices
+- 💫 **Animated Welcome Text**: Beautiful animated text effects
+- 📱 **Fully Responsive**: Works perfectly on all devices and screen sizes
 - ⚡ **Fast Performance**: Built with Next.js for optimal performance
+- 🎭 **Glassmorphism Design**: Modern frosted glass effect with backdrop blur
+- ✨ **Smooth Animations**: Delightful hover effects and transitions
+- 🎯 **Intuitive UX**: Clean and modern interface designed for ease of use
 
 ## Technologies Used
 
 - [Next.js 14](https://nextjs.org/)
 - [React 18](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-- CSS3 with CSS Variables
-- React Type Animation
+- CSS3 with CSS Variables & Glassmorphism
+- [React Icons](https://react-icons.github.io/react-icons/)
+- Poppins & Handlee Fonts
 
 ## Getting Started
 
@@ -80,13 +84,47 @@ npm start
 
 ## Usage
 
-- Click buttons or use your keyboard to input numbers and operators
-- Press Enter or click "=" to calculate
-- Press Backspace to delete the last character
-- Shift + Backspace to clear all
-- Click the theme button (sun/moon icon) to toggle between dark and light mode
-- Click the settings icon to switch between light and alternate theme
-- Click "S" button to enable scientific mode with additional functions
+### Basic Operations
+
+- **Click buttons** or use your **keyboard** to input numbers and operators
+- Press **Enter** or click **"="** to calculate
+- Press **Backspace** to delete the last character
+- **Shift + Backspace** to clear all
+- Hover over buttons to see smooth animations and feedback
+
+### Themes & Customization
+
+- **Theme Button** (sun/moon icon): Toggle between dark and light modes
+- **Settings Icon**: Switch between light and alternate colorful theme
+- Each theme features unique gradient backgrounds and color schemes
+
+### Scientific Mode
+
+- Click **"S" button** to enable scientific mode
+- Additional functions: Parentheses `( )`, Power `^`, Square root `√`
+- Perfect for advanced mathematical calculations
+
+## Design Highlights
+
+### Modern Glassmorphism
+
+- Frosted glass effect with backdrop blur for a premium feel
+- Translucent containers with elegant transparency
+- Smooth borders with subtle shadows
+
+### Enhanced UX
+
+- **Intuitive Layout**: Clean and organized button placement
+- **Visual Feedback**: Hover and active states on all interactive elements
+- **Smooth Transitions**: 0.3s ease transitions for all interactions
+- **Gradient Buttons**: Special gradient effects for Clear and Equal buttons
+- **Responsive Design**: Perfectly optimized for mobile, tablet, and desktop
+
+### Color Themes
+
+- **Dark Theme**: Purple gradient background with glassmorphic elements
+- **Light Theme**: Warm peach/coral gradient with soft shadows
+- **Alternate Theme**: Cool mint/pink gradient for a fresh look
 
 ## Scientific Mode
 
